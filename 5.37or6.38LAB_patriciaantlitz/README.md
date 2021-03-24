@@ -1,4 +1,4 @@
-# 5.37 LAB*: Program: Authoring assistant
+# 5.37 LAB: Program: Authoring assistant
 
 ### Code developed by Patricia Antlitz as C training for zyBook labs.
 

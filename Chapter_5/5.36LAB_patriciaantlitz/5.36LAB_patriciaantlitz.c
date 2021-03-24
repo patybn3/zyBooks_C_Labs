@@ -43,7 +43,8 @@ int GetNumOfCharacters(const char usrStr[]) {
       i++;
    }
     //return value
-   return i;
+//   return i-1; zyBooks is counting \n as a character, in case you dont wanna count \n use return i - 1 instead
+    return i;
 }
 //removes white spaces
 void OutputWithoutWhitespace(const char usrStr[]) {

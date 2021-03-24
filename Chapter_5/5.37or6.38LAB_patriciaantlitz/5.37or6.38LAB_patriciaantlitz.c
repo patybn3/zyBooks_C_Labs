@@ -94,7 +94,7 @@ char* FixCapitalization(char upperC[]){
             }
         }
         //if the chracter is a space and if the character before the space is a dot
-        if(isspace(upperC[i]) && upperC[i - 1] == '.') {
+        if((isspace(upperC[i]) && upperC[i - 1] == '.') || (isspace(upperC[i]) && upperC[i - 1] == '!') || (isspace(upperC[i]) && upperC[i - 1] == '?')) {
             //while the character is a space
             while (isspace(upperC[i])){
                 //add to the character to move to the next
@@ -144,7 +144,6 @@ char* ShortenSpace(char cutSpace[]){
     for (i = x = 0; cutSpace[i]; ++i)
     //checks if is not a space
       if (!isspace(cutSpace[i]) || (i > 0 && !isspace(cutSpace[i - 1])))
-        //removes the space
           cutSpace[x++] = cutSpace[i];
           cutSpace[x] = '\0';
           //returns the string
